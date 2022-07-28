@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head 
+    title Dev Dance Academy  
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+          div#dance  
+            img(src="/static/dance2.png")
+            | DDA 
+          li #[a(href="/") Home] 
+          li #[a(href="/") About] 
+          li #[a(href="/") Services]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Contact Us]
+
+    section#introSection  
+      div Welcome to Dev's Dance Academy
+      div.small Eat Dance Sleep Repeat 
+    section#missionSection 
+      h2 Our Mission 
+      div.card 
+        h3 Dance Perfection 
+        div.card-box 
+          div.card-img 
+            img(src="/static/1 (1).png")
+          div.card-content 
+            p This is the best dance academy in the world.
+      div.card 
+        h3 Dance the Way you Like 
+        div.card-box 
+          div.card-img 
+            img(src="/static/2.png")
+          div.card-content 
+            p This is the best dance academy in the world.
+      div.card 
+        h3 Expert Teaching 
+        div.card-box 
+          div.card-img 
+            img(src="/static/3.png")
+          div.card-content 
+            p This is the best dance academy in the world.
+    section#sponsersSection  
+      h2 Our Sponsers
+      div#sponsers 
+        img(src="/static/logo/logo (1).jpg", alt="sponser Image", class="spImage") 
+        img(src="/static/logo/logo 9.png", alt="sponser Image", class="spImage") 
+        img(src="/static/logo/logo (2).png", alt="sponser Image", class="spImage") 
+        img(src="/static/logo/logo (3).png", alt="sponser Image", class="spImage") 
+        img(src="/static/logo/logo (4).png", alt="sponser Image", class="spImage") 
+    
+    footer#footer 
+      | Copyright © 2022 DevdattDanceAcademy.com | All rights are resereved 
+    
+    script
+      include ../static/index.js
